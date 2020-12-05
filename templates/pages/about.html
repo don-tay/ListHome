@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row text-center">
       <div class="col-md-12">
-        <h1 class="display-4">About BT Real Estate</h1>
+        <h1 class="display-4">About Habitué</h1>
         <p class="lead">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt,
           pariatur!
@@ -73,8 +73,7 @@
 <section id="work" class="bg-dark text-white text-center">
   <h2 class="display-4">We Work For You</h2>
   <h4>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit
-    aperiam, unde aliquid at similique!
+    Sit back, and browse through the best properties with Habitué!
   </h4>
   <hr />
   <a href="listings.html" class="btn btn-secondary text-white btn-lg"
@@ -94,10 +93,11 @@
             src="{{ landlord.photo.url }}"
             alt=""
             class="rounded-circle mb-3"
+            style="height: 400px; object-fit: cover;"
           />
           <h4>{{ landlord.name }}</h4>
           <p class="text-success">
-            <i class="fas fa-award text-success mb-3"></i> Landlord
+            <i class="fas fa-award text-success mb-3"></i> Property Agent
           </p>
           <hr />
           <p><i class="fas fa-phone"></i> {{ landlord.phone }}</p>
@@ -106,7 +106,7 @@
         {% endfor %}
       {% else %}
         <div class="col-md-12">
-          <p>No Landlords Available</p>
+          <p>No Agents Available</p>
         </div>
       {% endif %}
     </div>
